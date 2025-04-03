@@ -1,21 +1,21 @@
-/* ===== SEARCH BAR ===== */
+/* Base Styles */
 .search-container {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .search-input {
   flex: 1;
-  padding: 0.75rem;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .search-button {
-  padding: 0.75rem 1.5rem;
-  background: var(--primary-color);
+  padding: 10px 20px;
+  background: #3498db;
   color: white;
   border: none;
   border-radius: 4px;
@@ -27,31 +27,29 @@
   background: #2980b9;
 }
 
-/* ===== WEATHER CARD ===== */
 .weather-card {
   background: white;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
 }
 
-.weather-card h2 {
-  margin-top: 0;
-  color: #2c3e50;
+.weather-details {
+  margin-top: 15px;
 }
 
-.weather-detail {
-  margin: 0.5rem 0;
-  color: #7f8c8d;
+.weather-details p {
+  margin: 8px 0;
+  color: #333;
 }
 
-/* Status messages */
-.loading-message {
-  color: var(--primary-color);
+.loading {
+  color: #3498db;
   text-align: center;
 }
 
-.error-message {
-  color: var(--error-color);
+.error {
+  color: #e74c3c;
   text-align: center;
 }

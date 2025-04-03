@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../Weather.css';
+import './Weather.css';
 
-export default function SearchBar({ onSearch }) {
+function SearchBar({ onSearch }) {
   const [city, setCity] = useState('');
 
   return (
@@ -22,3 +22,5 @@ export default function SearchBar({ onSearch }) {
     </div>
   );
 }
+
+export default SearchBar;
